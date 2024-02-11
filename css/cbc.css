@@ -1,0 +1,242 @@
+body {margin: 0px;}
+#headerbar {
+	background-color: rgb(153, 148, 145);
+	height: 100px;
+	text-align: left;
+}
+#cbclogo {
+	width: 72px;
+	height: 72px;
+	margin: 12px;
+}
+#cbcname {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	margin: 12px;
+}
+#landingpage {
+	margin: 24px;
+}
+#menu {
+    position:  absolute;
+    visibility: hidden;
+	z-index: 99;
+	left: 15px;
+	top: 38px; 
+    width: fit-content;
+    min-height: fit-content;
+    height: fit-content;
+	background: rgba(0,35,72,0.77); 
+    color: #fff;
+	border: 2px  solid rgba(0,0,0,0.5); 
+	border-radius: 2px; 
+	padding: 3px; 
+    line-height: 0.5;
+}
+#menu:hover {
+    cursor: grab;
+}
+#overlay {
+	position: absolute;
+	z-index: -101;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	margin-top: 0px;
+}
+#myCanvas {
+	position: absolute;
+	z-index: 0;
+	width: 1000px;
+	height: 1000px;
+	top: 0px;
+	left: 0px;
+	margin-top: 0px;
+    pointer-events: none;
+}
+table {
+	font-family: arial, sans-serif;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+}
+td, th {
+	vertical-align: top;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+div {font-family: Arial, Helvetica, sans-serif;font-size: medium;}
+.player { 
+	position:  absolute;
+	z-index: 2;
+	left: 100px;
+	top: 300px; 
+	background: rgba(255,255,255,0.66); 
+	border: 2px  solid rgba(0,0,0,0.5); 
+	border-radius: 10px; 
+	padding: 1px;
+}
+#buttonbar {
+	position:  absolute;
+	visibility: hidden;
+	margin-top: 40px;
+	margin-left: 18px;
+	z-index: 3;
+	width: 100%;
+}
+#feedbackDiv {
+	position:  absolute;
+    visibility: hidden;
+	z-index: 101;
+	bottom: 0px;
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+	color: darkblue;
+	background: rgba(255,255,255,0.66); 
+}
+#positionSelect {font-size: large;}
+#personIcon {
+    width: 40px;
+	height: 40px;	
+}
+#muteButton {
+    width: 40px;
+	height: 40px;
+	opacity: 0.5;
+	margin-left: 12px;
+	float:right;
+}
+#nextButton {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	visibility: visible;
+	font-size: xx-large;
+	margin: 24px;
+}
+.choicetile {
+	position:  relative;
+	align-self: center;
+	text-align: center;
+	width: 90%;
+	margin: 12px;
+	font-size: xx-large;
+	background: rgba(255,255,255,0.66); 
+	border: 2px  solid rgba(0,0,0,0.5); 
+	border-radius: 3px; 
+	padding: 1px;
+}
+.practiceitemprompt {
+	margin-left: 12px;
+	text-align: center;
+	font-size: xx-large;
+}
+#practiceitem {
+	margin: 24px;
+	visibility: hidden;
+}
+.choicetileimg {
+	width: 40%;
+	height: 40%;
+}
+.button { 
+	float: left;
+	z-index: 2;
+	/* set these so Chrome doesn't return 'auto' from getComputedStyle */
+	width: 130px; 
+	text-align: center;
+	background: rgba(255,255,255,0.66); 
+	border: 2px  solid rgba(0,0,0,0.5); 
+	border-radius: 3px; 
+	padding: 1px;
+}
+.inlinebutton { 
+	float: right;
+	text-align: center;
+	background: rgba(255,255,255,0.66); 
+	border: 2px  solid rgba(0,0,0,0.5); 
+	border-radius: 3px; 
+	padding: 1px;
+	min-width: fit-content;
+	max-width: max-content;
+}
+.status { 
+	color: #000000;
+	float: right;
+	margin-right: 40px;
+	z-index: 2;
+	text-align: right; 
+	font-size: +4;
+	padding: 5px;
+}
+.tempstatus { 
+	position:  relative;
+	color: rgb(255, 255, 255);
+	float: left;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	z-index: 2;
+	text-align: left; 
+	font-size: -4px;
+	padding: 4px;
+}
+#playingfield {
+	background: rgb(54, 145, 54);
+	text-align: center;
+	
+
+}
+#lineofscrimage {
+	position: absolute;
+	visibility: hidden;
+	z-index: 0;
+	top: 300px;
+	width: 95%;
+	align-self: center;
+	margin-left: 36px;
+	margin-right: 18px;
+	height: 6px;
+	border: 1px  solid rgba(255,255,255,1);
+	background: rgba(255,255,255,1); 
+}
+.tooltip {
+	position: absolute;
+}
+
+.player .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.player .tooltiptext::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+.player:hover {
+    cursor: grab;
+}
+.player:hover .tooltiptext {
+	visibility: visible;
+}

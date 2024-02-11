@@ -1,0 +1,1 @@
+This repo is to help disciples at CBC practice remembering essential truths for growing as fully devoted followers of Jesus Christ and knowledge that helps us in fulfilling our mission to make and grow fully devoted followers of Christ.

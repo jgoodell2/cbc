@@ -1,0 +1,56 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="css/cbc.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./js/cbc.js"></script>
+</head>
+<body>
+    <div id="headerbar">
+        <table>
+            <tr>
+                <td style="width:min-content;text-align: left;">
+                    <svg id="cbclogo" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 483.5 719.47" viewBox="0 0 483.5 719.47" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                        <g>
+                            <path d="M293.73 308.58h155.71a34.06 34.06 0 0 1 34.06 34.06v342.77a34.06 34.06 0 0 1-34.06 34.06H327.78a34.06 34.06 0 0 1-34.06-34.06V308.58h.01z" fill="#ffffff" data-color="1"></path>
+                            <path d="M34.06 308.58h155.71v376.83a34.06 34.06 0 0 1-34.06 34.06H34.06A34.06 34.06 0 0 1 0 685.41V342.63a34.06 34.06 0 0 1 34.06-34.06z" fill="#ffffff" data-color="1"></path>
+                            <path d="M35.57 0h120.28a33.92 33.92 0 0 1 33.92 33.92v162.45H35.57a33.92 33.92 0 0 1-33.92-33.92V33.92A33.92 33.92 0 0 1 35.57 0z" fill="#ffffff" data-color="1"></path>
+                            <path d="M329.29 0h120.29a33.92 33.92 0 0 1 33.92 33.92v128.53a33.92 33.92 0 0 1-33.92 33.92h-154.2V33.92A33.92 33.92 0 0 1 329.29 0z" fill="#ffffff" data-color="1"></path>
+                        </g>
+                    </svg>
+                </td>
+                <td style="width:min-content;text-align: left;">
+                    <div id="cbcname">CHARLTON<br>BAPTIST<br>CHURCH</div>
+                </td>
+                <td style="width:100%;"></td>
+                <td>
+                    <div id="topRightControls" style="float: right;">
+                        <img id="personIcon" src="images/personicon.png" alt="login and settings icon">
+                        <img id="muteButton" src="images/muted.png" onclick="toggleMute()"><!--User action control required for audio in Safari-->
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="landingpage">
+       <span class="practiceitemprompt"><br>Practice remembering key points from this week's sermon, key scriptures, and CBC's mission so you can be better equipped as a fully devoted follower of Jesus Christ.</span> 
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="practiceitem">
+        <p id="practiceitemprompt" class="practiceitemprompt"></p>
+        <p id="subtext">(tap or click)</p>
+        <div class="choicetile" id="choicetile0" onclick="checkAnswer(this)">1</div>
+        <div class="choicetile" id="choicetile1" onclick="checkAnswer(this)">2</div>
+        <div class="choicetile" id="choicetile2" onclick="checkAnswer(this)">3</div>
+        <div class="choicetile" id="choicetile3" onclick="checkAnswer(this)">4</div>
+    </div>
+    <button type="button" id="nextButton" onclick="nextPracticeItem()">Continue</button>
+    <div id="feedbackDiv">-------</div>
+    <div id="audioDiv">
+        <audio id="audio" muted>
+            <source src="audio/correct.mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+</body>
+</html>
