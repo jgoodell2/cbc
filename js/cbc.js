@@ -1,4 +1,4 @@
-//  (c) Jim Goodell 
+//  (CC0 - open and free) Jim Goodell 
 const practiceitems = [
 
     {id: "18FEB2024-1", prompt: "Pastor Kohl's Farewell Reminder 1: Keep the ______________ foremost in all your thinking and living.", choices: 
