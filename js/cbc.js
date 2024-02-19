@@ -217,23 +217,23 @@ function toggleMaker() {
     default_lineup();
     document.getElementById('menu').style.visibility="hidden";
 }
-function getOtherRandomPlayerPlayImage(positionId,play) {
+/* function getOtherRandomPlayerPlayImage(positionId, play) {
     var randomPlayerPlayImage = "";
     // @TODO -- Rewrite -- This will go into an infiinte loop if there aren't at-least 5 plays for the player to practice
-    while (randomPlayerPlayImage=="") {
-        var r = Math.floor(Math.random()*playerPlayTiles.length);
-        if (playerPlayTiles[r].play!=play && playerPlayTiles[r].positionId) {
-            randomPlayerPlayImage=`images/plays/${positionId}-${playerPlayTiles[r].play}.png`
+    while (randomPlayerPlayImage == "") {
+        var r = Math.floor(Math.random() * playerPlayTiles.length);
+        if (playerPlayTiles[r].play != play && playerPlayTiles[r].positionId) {
+            randomPlayerPlayImage = `images/plays/${positionId}-${playerPlayTiles[r].play}.png`
         }
     }
     //alert(randomPlayerPlayImage);
     return randomPlayerPlayImage;
 }
 function lookupPositionName(positionId) {
-    for (i=0; i<playerPositions.length;i++) {
-        if (playerPositions[i].id==positionId) {return playerPositions[i].name}
+    for (i = 0; i < playerPositions.length; i++) {
+        if (playerPositions[i].id == positionId) { return playerPositions[i].name }
     }
-}
+} */
 function checkAnswer(e) {
     var feedback ="";
     var feedbacktime = 2000;
@@ -322,7 +322,7 @@ function find_center() {
     centerXY.y = Math.round(pf.clientHeight/2);
     return true;
 }
-function default_lineup() {
+/* function default_lineup() {
     find_center();
     // Move line of scrimage to middle
     var ls = document.getElementById('lineofscrimage');
@@ -488,7 +488,7 @@ function createPlay(playname) {
     var newPlay = {name: playname, steps: []};
     var arrayLen = data.plays.push(newPlay);
     return data.plays[arrayLen-1];
-}
+} */
 // function savePlayStep() {
 //     //Deprecate -- replace with setPlayStep
 // 	find_center();
@@ -528,7 +528,7 @@ function createPlay(playname) {
 //     updateStatus();
 //     saveToCookie();
 // }
-function addPlayStep() {
+/* function addPlayStep() {
     if (current_play!=null && current_play.steps!=null && current_play.steps.length>0) {
         current_play_step++ 
     } else {
@@ -686,7 +686,7 @@ function loadFromCookie() {
     } catch(e) {
         tempstatus("Data from cookie could not be loaded.");
     }
-}
+} */
 // function debugRoundtripCookie() {
 //     var dataString=JSON.stringify(data);
 //     saveToCookie();
@@ -696,7 +696,7 @@ function loadFromCookie() {
 //         tempstatus("Bad cookie");
 //     }
 // }
-function getCookie(cname) {
+/* function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -768,4 +768,4 @@ function animateNextStep() {
         current_play_step++;
         setTimeout(animateNextStep(),4000);
     }
-}
+} */
