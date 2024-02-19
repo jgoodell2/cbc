@@ -291,7 +291,7 @@ function toggleMute() {
     audio.play(); // audio will load and then play
     var userAgent = window.navigator.userAgent;
     if (userAgent.includes("Safari") && !(userAgent.includes("Chrome"))) {
-        var alertText = `Audio feedback not supported on Safari and iOS browsers. Use Chrome on Mac. Your user agent is: ${userAgent}`;
+        var alertText = `Audio feedback not supported on Safari and iOS browsers. Use Chrome on Mac.`;
         alert(alertText);
     }
 }
