@@ -5,7 +5,7 @@ const practiceitems = [
     [
         {id: "choice0", value: "CBC phone number", correct: false}, 
         {id: "choice1", value: "CBC legacy", correct: false},
-        {id: "choice1", value: "Great Commandments", correct: true, correctfeedback: "&quot;Teacher, which is the greatest commandment in the Law?&quot; Jesus replied: &quot;‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ 38 This is the first and greatest commandment.&quot;"},
+        {id: "choice1", value: "Great Commandments", correct: true, correctfeedback: "&quot;Teacher, which is the greatest commandment in the Law?&quot; Jesus replied: &quot;&apos;Love the Lord your God with all your heart and with all your soul and with all your mind.&apos; This is the first and greatest commandment.&quot;"},
         {id: "choice1", value: "Giving to CBC", correct: false}
     ]},
     {id: "mission0", prompt: "The mission of Charlton Baptist Church is to _______ God by making and growing fully devoted followers of Jesus Christ.", choices: 
@@ -148,7 +148,7 @@ function nextPracticeItem() {
     document.getElementById("landingpage").style.visibility="hidden";
     document.getElementById("nextButton").style.visibility="hidden";
     currentpracticeItemIndex++;
-    if (currentpracticeItemIndex==practiceitems.length) {currentpracticeItemIndex=0};
+    if (currentpracticeItemIndex>practiceitems.length-1) {currentpracticeItemIndex=0};
     document.getElementById('practiceitemprompt').innerHTML = practiceitems[currentpracticeItemIndex].prompt;
     for (i=0;i<practiceitems[currentpracticeItemIndex].choices.length;i++) {
         var choicetileid = "choicetile" + i;
