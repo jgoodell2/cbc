@@ -1,11 +1,68 @@
 //  (c) Jim Goodell 
 const practiceitems = [
+
+    {id: "18FEB2024-1", prompt: "Pastor Kohl's Farewell Reminder 1: Keep the ______________ foremost in all your thinking and living.", choices: 
+    [
+        {id: "choice0", value: "CBC phone number", correct: false}, 
+        {id: "choice1", value: "CBC legacy", correct: false},
+        {id: "choice1", value: "Great Commandments", correct: true, correctfeedback: "&quot;Teacher, which is the greatest commandment in the Law?&quot; Jesus replied: &quot;‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ 38 This is the first and greatest commandment.&quot;"},
+        {id: "choice1", value: "Giving to CBC", correct: false}
+    ]},
     {id: "mission0", prompt: "The mission of Charlton Baptist Church is to _______ God by making and growing fully devoted followers of Jesus Christ.", choices: 
     [
         {id: "choice0", value: "Jesus", correct: false}, 
         {id: "choice1", value: "Bible", correct: false},
         {id: "choice1", value: "glorify", correct: true},
         {id: "choice1", value: "pray to", correct: false}
+    ]},
+    {id: "18FEB2024-2", prompt: "Pastor Kohl's Farewell Reminder 2: Your speech should always be full of _________ no matter what the circumstances. (Colossians 4:6,Ephesians 4:29)", choices: 
+    [
+        {id: "choice0", value: "grace", correct: true}, 
+        {id: "choice1", value: "accountability", correct: false},
+        {id: "choice1", value: "judgement", correct: false},
+        {id: "choice1", value: "righteous indignation", correct: false}
+    ]},
+    {id: "18FEB2024-3", prompt: "Pastor Kohl's Farewell Reminder 3: Be quick to __________ and seek reconciliation with those who hurt you.", choices: 
+    [
+        {id: "choice0", value: "listen", correct: false}, 
+        {id: "choice1", value: "correct", correct: false},
+        {id: "choice1", value: "forgive", correct: true},
+        {id: "choice1", value: "speak", correct: false}
+    ]},
+    {id: "18FEB2024-4", prompt: "Pastor Kohl's Farewell Reminder 4: Put away your __________ ambitions.", choices: 
+    [
+        {id: "choice0", value: "righteous", correct: false}, 
+        {id: "choice1", value: "selfish", correct: true, correctfeedback: "selfish ambition = insisting on getting our own way."},
+        {id: "choice1", value: "complex", correct: false},
+        {id: "choice1", value: "purple", correct: false}
+    ]},
+    {id: "18FEB2024-5", prompt: "Pastor Kohl's Farewell Reminder 5: Go beyond ____________ in extending hospitality to all who enter through our doors, strangers and church family are alike. (Hebrews 13:1-2)", choices: 
+    [
+        {id: "choice0", value: "the line", correct: false}, 
+        {id: "choice1", value: "the Bible", correct: false},
+        {id: "choice1", value: "the church", correct: false},
+        {id: "choice1", value: "friendliness", correct: true}
+    ]},
+    {id: "18FEB2024-6", prompt: "Pastor Kohl's Farewell Reminder 6: Don't make the mistake of thinking you will have less money in your pocket if you _______________. (Proverbs 3:9-10, Proverbs 11:24-25, Malachi 3:10, Like 6:38, 2 Corinthians 9:6)", choices: 
+    [
+        {id: "choice0", value: "buy a new car", correct: false}, 
+        {id: "choice1", value: "pray", correct: false},
+        {id: "choice1", value: "work hard", correct: false},
+        {id: "choice1", value: "give generously", correct: true}
+    ]},
+    {id: "18FEB2024-7", prompt: "Pastor Kohl's Farewell Reminder 7: Remember to look beyomnd the pews to _________ for everything you need. (Matthew 7:7-9, 18:19, Mark 11:24, John 15:7-8,16, 16:23, 1 John 3:21,22; 5:14-15)", choices: 
+    [
+        {id: "choice0", value: "heaven", correct: false}, 
+        {id: "choice1", value: "the parking lot", correct: false},
+        {id: "choice1", value: "the back wall", correct: true},
+        {id: "choice1", value: "the street", correct: false}
+    ]},
+    {id: "18FEB2024-END", prompt: "This is the end of Pastor Kohl's Farewell Reminders. Do you want to continue with truths from the previous sermon?", choices: 
+    [
+        {id: "choice0", value: "", correct: false, incorrectfeedback: ""}, 
+        {id: "choice1", value: "", correct: false, incorrectfeedback: ""},
+        {id: "choice1", value: "Continue", correct: true, incorrectfeedback: "Ok, let's go!"},
+        {id: "choice1", value: "", correct: false, incorrectfeedback: ""}
     ]},
     {id: "mission1", prompt: "The mission of Charlton Baptist Church is to glorify God by ________ and growing fully devoted followers of Jesus Christ.", choices: 
     [
@@ -76,6 +133,13 @@ const practiceitems = [
         {id: "choice1", value: "baptise", correct: false},
         {id: "choice1", value: "name", correct: false},
         {id: "choice1", value: "disciple", correct: true, correctfeedback: "Right, &quot;disciple&quot; or &quot;make disciples&quot; is the main verb. A common mistake is to think it is &quot;go&quot;, but that is just a modifier here, as in &quot;going&quot;."}
+    ]},
+    {id: "end", prompt: "This is the end of the practice. Close the tab to end or tap/click continue to practice again.</i> What is the main verb in this passage based on the original Greek text?", choices: 
+    [
+        {id: "choice0", value: "", correct: false, incorrectfeedback: ""}, 
+        {id: "choice1", value: "", correct: false, incorrectfeedback: ""},
+        {id: "choice1", value: "", correct: false, incorrectfeedback: ""},
+        {id: "choice1", value: "Continue", correct: true, correctfeedback: "Ok. Let's practice some more."}
     ]}
 ];
 var currentpracticeItemIndex = 0;
