@@ -50,11 +50,11 @@ const practiceitems = [
         {id: "choice1", value: "work hard", correct: false},
         {id: "choice1", value: "give generously", correct: true}
     ]},
-    {id: "18FEB2024-7", prompt: "Pastor Kohl's Farewell Reminder 7: Remember to look beyomnd the pews to _________ for everything you need. (Matthew 7:7-9, 18:19, Mark 11:24, John 15:7-8,16, 16:23, 1 John 3:21,22; 5:14-15)", choices: 
+    {id: "18FEB2024-7", prompt: "Pastor Kohl's Farewell Reminder 7: Remember to look beyond the pews to _________ for everything you need. (Matthew 7:7-9, 18:19, Mark 11:24, John 15:7-8,16, 16:23, 1 John 3:21,22; 5:14-15)", choices: 
     [
-        {id: "choice0", value: "heaven", correct: false}, 
+        {id: "choice0", value: "heaven", correct: true}, 
         {id: "choice1", value: "the parking lot", correct: false},
-        {id: "choice1", value: "the back wall", correct: true},
+        {id: "choice1", value: "the back wall", correct: false},
         {id: "choice1", value: "the street", correct: false}
     ]},
     {id: "18FEB2024-END", prompt: "This is the end of Pastor Kohl's Farewell Reminders. Do you want to continue with truths from the previous sermon?", choices: 
@@ -142,7 +142,7 @@ const practiceitems = [
         {id: "choice1", value: "Continue", correct: true, correctfeedback: "Ok. Let's practice some more."}
     ]}
 ];
-var currentpracticeItemIndex = 0;
+var currentpracticeItemIndex = practiceitems.length;
 
 function nextPracticeItem() {
     document.getElementById("landingpage").style.visibility="hidden";
