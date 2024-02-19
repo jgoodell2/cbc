@@ -120,7 +120,7 @@ const practiceitems = [
         {id: "choice1", value: "small groups", correct: false},
         {id: "choice1", value: "the pastor", correct: false}
     ]},
-    {id: "smallgroupsizemax", prompt: "The maximum recommended small group size is:", choices: 
+    {id: "smallgroupsizemax", prompt: "The <i>maximum</i> recommended small group size is:", choices: 
     [
         {id: "choice0", value: "12", correct: true}, 
         {id: "choice1", value: "6", correct: false},
@@ -134,7 +134,7 @@ const practiceitems = [
         {id: "choice1", value: "name", correct: false},
         {id: "choice1", value: "disciple", correct: true, correctfeedback: "Right, &quot;disciple&quot; or &quot;make disciples&quot; is the main verb. A common mistake is to think it is &quot;go&quot;, but that is just a modifier here, as in &quot;going&quot;."}
     ]},
-    {id: "end", prompt: "This is the end of the practice. Close the tab to end or tap/click continue to practice again.</i> What is the main verb in this passage based on the original Greek text?", choices: 
+    {id: "end", prompt: "This is the end of the practice. Close the tab to end or tap/click continue to practice again.</i>", choices: 
     [
         {id: "choice0", value: "", correct: false, incorrectfeedback: ""}, 
         {id: "choice1", value: "", correct: false, incorrectfeedback: ""},
